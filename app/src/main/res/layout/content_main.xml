@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.twotowerstudios.ofmiceandmen.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:id="@+id/mainView">
+
+    <LinearLayout
+        android:id="@+id/llMainHeader"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:id="@+id/llLogo"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lennie"
+                    android:id="@+id/ivLogo"
+                android:elevation="6dp"
+                android:layout_gravity="center" />
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ff6f00"/>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:id="@+id/vpPager"
+        android:layout_weight="0.4375">
+        <android.support.v4.view.PagerTitleStrip
+            android:elevation="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#FFF"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+        </android.support.v4.view.PagerTitleStrip>
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

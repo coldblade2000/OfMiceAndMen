@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_lennie"
+            android:icon="@drawable/ic_person_24dp"
+            android:title="Lennie"
+            android:checked="true"/>
+        <item
+            android:id="@+id/nav_george"
+            android:icon="@drawable/ic_person_24dp"
+            android:title="George" />
+        <item
+            android:id="@+id/nav_curley"
+            android:icon="@drawable/ic_person_24dp"
+            android:title="Curley" />
+        <item
+            android:id="@+id/nav_curleyswife"
+            android:icon="@drawable/ic_person_24dp"
+            android:title="Curley's wife" />
+
+        <item
+            android:id="@+id/nav_Candy"
+            android:icon="@drawable/ic_person_24dp"
+            android:title="Candy" />
+    </group>
+
+
+
+</menu>
